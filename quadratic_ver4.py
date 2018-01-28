@@ -8,5 +8,7 @@ def ecfc(a,b,c):
         x2 = (-b - math.sqrt(d))/(2*a)
         return x1,x2
 
-#test
-print('For 1,3,-4  the answer is' , ecfc(1,3,-4))
+def Qiujie(a,b,c,f):
+    return f(a,b,c)
+
+print('For 1,3,-4  the answer is' , Qiujie(1,3,-4,ecfc))
