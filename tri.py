@@ -1,5 +1,7 @@
 def tri():
-    a = [1,2,1]
+    yield [1]
+    
+    a = [1,1]
 
     while(True):
         yield a
@@ -10,6 +12,7 @@ def tri():
         
 
 t = tri()
-print(next(t))
-print(next(t))
-print(next(t))
+i = 0
+while(i < 20):
+    print(next(t))
+    i+=1
